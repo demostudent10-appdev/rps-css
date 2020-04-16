@@ -8,14 +8,13 @@ body {
   font-family: 'Space Mono', monospace;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: 5px red solid;
   height: 100vh;
 }
 
+/* Grid classes */
+
 .container {
-  width: 960px;d
-  border: 5px green solid;
+  width: 960px;
 }
 
 .row {
@@ -28,17 +27,53 @@ body {
   justify-content: center;
 }
 
+.one-quarter {
+  width: 24%;
+}
+
 .one-third {
   width: 32%;
 }
 
-.mb {
+.one-half {
+  width: 49%;
+}
+
+.two-thirds {
+  width: 66%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Utility classes */
+
+.mb-x-small {
+  margin-bottom: 2px;
+}
+
+.mb-small {
+  margin-bottom: 5px;
+}
+
+.mb-medium {
   margin-bottom: 10px;
+}
+
+.mb-large {
+  margin-bottom: 20px;
+}
+
+.mb-x-large {
+  margin-bottom: 50px;
 }
 
 .centered {
   text-align: center;
 }
+
+/* Components */
 
 .button {
   color: teal;
@@ -50,20 +85,23 @@ body {
   text-align: center;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+  transition: background-color .3s linear;
+}
+
+.button:hover {
+  background-color: teal;
+  color: white;
 }
 
 .player-card {
   border: thin green solid;
-  width: 49%;
 }
 
 .computer-card {
   border: thin red solid;
-  width: 49%;
 }
 
 .outcome-card {
   border: thin red solid;
   background-color: pink;
-  width: 66%;
 }
